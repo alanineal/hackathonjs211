@@ -1,0 +1,84 @@
+body {
+  margin: 0;
+  padding: 30px;
+}
+
+.container-hangman {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid;
+  border-radius: 10px;
+  padding: 30px;
+}
+
+.letters-section {
+  border: 1px solid;
+  border-radius: 20px;
+  height: auto;
+  width: 361px;
+  padding: 20px;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.letters-section .item {
+  display: inline-block;
+  border: 1px solid;
+  border-radius: 30px;
+  padding: 5px;
+  margin: 5px;
+  cursor: pointer;
+}
+
+.item:hover {
+  background: #000;
+  color: #fff;
+}
+
+.placeholder {
+  margin-top: 30px;
+  letter-spacing: 5px;
+  font-size: 20px;
+}
+
+.popov {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  background: #f6f6f6;
+}
+.popBox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border: 5px solid #3fb984;
+  width: 400px;
+  height: 200px;
+  border-radius: 150px;
+  background: #fff;
+}
+.popBox p {
+  font-size: 25px;
+  margin-bottom: 10px;
+}
+.popBox button {
+  border: 1px solid #3fb984;
+  border-radius: 30px;
+  padding: 10px 20px;
+  cursor: pointer;
+  background: #fff;
+  color: #3fb984;
+  font-weight: bold;
+  outline: none;
+}
+.popBox button:hover {
+  background: #3fb984;
+  color: #fff;
+}
